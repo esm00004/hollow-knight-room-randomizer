@@ -1,0 +1,14 @@
+.img1 {
+    size: 50px;
+    background-color: lime;
+}
+
+.text {
+    font-size: 50px;
+    color: red;
+    background-color: yellow;
+}
+
+.box {
+    justify-content: center;
+}
