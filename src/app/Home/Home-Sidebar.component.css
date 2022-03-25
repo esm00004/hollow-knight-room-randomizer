@@ -1,0 +1,18 @@
+.sidebar {
+    flex-direction: column;
+    width: 50px;
+}
+
+.SideButton:active {
+    background-color: red;
+}
+
+.side {
+    height: 100vh;
+    align-items: flex-start;
+    background-color: blue;
+}
+
+.sideB {
+    padding-top: 10px;
+}

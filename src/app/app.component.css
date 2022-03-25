@@ -1,14 +1,17 @@
 .img1 {
     size: 50px;
-    background-color: lime;
 }
 
 .text {
     font-size: 50px;
     color: red;
-    background-color: yellow;
 }
 
 .box {
-    justify-content: center;
+    background-color: #161b21;
+}
+
+.side {
+    padding: 0px;
+    height: 100vh;
 }
