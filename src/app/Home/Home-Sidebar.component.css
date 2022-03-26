@@ -1,18 +1,31 @@
-.sidebar {
-    flex-direction: column;
-    width: 50px;
+.search {
+    padding-top: 40px;
 }
 
-.SideButton:active {
-    background-color: red;
+.inSearch {
+    background-color: #252b43;
+    box-shadow: rgb(0 0 0 / 33%) 0px 3px 5px inset;
+    border: 1px solid rgb(55, 63, 90);
+    color: white;
 }
 
-.side {
-    height: 100vh;
-    align-items: flex-start;
-    background-color: blue;
+.MHB {
+    /* padding-top: 100px; */
 }
 
-.sideB {
-    padding-top: 10px;
+.IC {
+    margin-bottom: 10px;
+    background-color: #252b43;
+}
+
+.info {
+    background-color: #252b43;
+    box-shadow: rgb(0 0 0 / 33%) 0px 3px 5px inset;
+    border: 1px solid rgb(55, 63, 90);
+    color: white;
+    outline: none;
+}
+
+.BotBar {
+    padding-top: 100px;
 }
