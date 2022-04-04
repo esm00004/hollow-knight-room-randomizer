@@ -6,6 +6,7 @@ import { HomeInfoCardComponent } from './Home/Home-InfoCard.component';
 import { HomeMapBoxComponent } from './Home/Home-MapBox.component';
 import { HomeNavbarComponent } from './Home/Home-Navbar.component';
 import { HomeSidebarComponent } from './Home/Home-Sidebar.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HomeSidebarComponent } from './Home/Home-Sidebar.component';
     HomeInfoCardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
