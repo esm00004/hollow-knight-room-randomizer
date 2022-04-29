@@ -7,6 +7,7 @@ import { HomeMapBoxComponent } from './Home/Home-MapBox.component';
 import { HomeNavbarComponent } from './Home/Home-Navbar.component';
 import { HomeSidebarComponent } from './Home/Home-Sidebar.component';
 import {HttpClientModule} from '@angular/common/http';
+import { TestPageComponent } from './Layouts/test-page/test-page.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import {HttpClientModule} from '@angular/common/http';
     HomeSidebarComponent,
     HomeNavbarComponent,
     HomeMapBoxComponent,
-    HomeInfoCardComponent
+    HomeInfoCardComponent,
+    TestPageComponent
   ],
   imports: [
     BrowserModule,
