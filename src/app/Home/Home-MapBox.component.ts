@@ -1,6 +1,5 @@
-import { Component, OnInit } from "@angular/core";
-import { NamesItemModel } from "./names-item.model";
-import { NamesService } from "./names.service";
+import { Component, Input, OnInit } from '@angular/core';
+import { MapBoxModel } from '../Layouts/test-page/mapBox.model';
 
 @Component({
     selector: "hkmr-Home-MapBox",
@@ -9,18 +8,12 @@ import { NamesService } from "./names.service";
 })
 
 export class HomeMapBoxComponent implements OnInit {
-    names: NamesItemModel[] = [];
+    names: MapBoxModel[] = [];
+    
+    constructor() {
+        for(var name of ){
 
-    constructor(private NamesService:NamesService) {
+        }
     }
-    ngOnInit(): void {
-        this.NamesService.getNames().subscribe((data: NamesItemModel []) => {
-            console.log("fetching products");
-            for (var name of data) {
-                console.log(name);
-                // dont need to keep console.log after done testing
-                this.names.push(name);
-            }
-        });
-    }
+    
 }
