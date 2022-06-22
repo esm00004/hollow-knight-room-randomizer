@@ -1,0 +1,4 @@
+6/22/22: 
+Added mock list to house map names, decided to sort not only by areas, but piece type as well. Next step is to pull 
+data from realtime database instead of hardcoded mock list. Then, map images should be added so that sorting can be implimented.
+Ended on "Week 4-3".
