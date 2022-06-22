@@ -14,9 +14,9 @@ import { TestPageComponent } from './Layouts/test-page/test-page.component';
     AppComponent,
     HomeSidebarComponent,
     HomeNavbarComponent,
-    HomeMapBoxComponent,
     HomeInfoCardComponent,
-    TestPageComponent
+    TestPageComponent,
+    HomeMapBoxComponent
   ],
   imports: [
     BrowserModule,
