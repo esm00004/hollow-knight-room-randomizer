@@ -23,8 +23,11 @@
             <div class="accordion-body">
                 
                 <div class="MHB" style="color: white;">
-                    <hkmr-Home-MapBox>Loading...</hkmr-Home-MapBox>
-                    testing some text
+                    <div class="container-fluid">
+                      <div *ngFor="let mapName of mapNames">
+                        <hkmr-Home-MapBox mapNames={{mapName.mapName}}>Loading...</hkmr-Home-MapBox>
+                      </div>
+                    </div>
                 </div>
             
             </div>

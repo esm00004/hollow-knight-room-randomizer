@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
     selector: "hkmr-Home-MapBox",
@@ -7,5 +7,10 @@ import { Component } from "@angular/core";
 })
 
 export class HomeMapBoxComponent {
-    
+    // this input means that it can recieve information from outside the component.
+    @Input() mapNames: string;
+
+    constructor() {
+        this.mapNames = "no name";
+    }
 }
