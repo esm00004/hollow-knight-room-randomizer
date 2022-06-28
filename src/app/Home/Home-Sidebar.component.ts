@@ -1,6 +1,6 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { MapNameItemModel } from "./mapName-item.model";
-import { mock_mapName_list } from "./mock_mapName_list";
+import { MapNamesService } from "./mapNames.service";
 
 @Component({
     selector: "hkmr-Home-Sidebar",
@@ -8,13 +8,19 @@ import { mock_mapName_list } from "./mock_mapName_list";
     styleUrls: ["Home-Sidebar.component.css"]
 })
 
-export class HomeSidebarComponent {
+export class HomeSidebarComponent implements OnInit{
     mapNames: MapNameItemModel[] = [];
 
-    constructor() {
-        for (var mapName of mock_mapName_list) {
-            console.log(mapName);
-            this.mapNames.push(mapName);
-        }
+    constructor(private MapNamesService:MapNamesService) {
+    }
+    ngOnInit(): void {
+        this.MapNamesService.getMapNames().subscribe((data: MapNameItemModel []) => {
+            console.log("fetching products");
+            for (var mapName of data) {
+                console.log(mapName);
+                // remove console.log when this works
+                this.mapNames.push(mapName);
+            }
+        });
     }
 }
