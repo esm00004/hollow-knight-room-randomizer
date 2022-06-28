@@ -5,4 +5,7 @@ Ended on "Week 4-3".
 
 6/28/22:
 Moved the data from mapNames mock list to the realtime database, and deleted the mock list. map names for the sidebar are now
-accesed from the realtime database instead of the mock list. 
+accesed from the realtime database instead of the mock list. Added checkboxes to the list and found a website that has the
+drag and drop function I've been looking for. 
+https://material.angular.io/cdk/drag-drop/overview => Drag&Drop connected sorting.
+

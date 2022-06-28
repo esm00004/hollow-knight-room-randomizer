@@ -17,8 +17,6 @@ export class HomeSidebarComponent implements OnInit{
         this.MapNamesService.getMapNames().subscribe((data: MapNameItemModel []) => {
             console.log("fetching products");
             for (var mapName of data) {
-                console.log(mapName);
-                // remove console.log when this works
                 this.mapNames.push(mapName);
             }
         });

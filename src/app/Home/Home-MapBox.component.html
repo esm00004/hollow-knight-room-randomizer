@@ -8,7 +8,16 @@ attributes for the images needed in the dropbox.-->
 
 <!-- after making the model and list stuff i need to make this component the clickable boxes so that it repeats -->
 
-<div class="div">
-    <p>Box: {{mapNames}}</p>
-</div>
+<!-- maybe I could make it a clickable text button for the map areas and the boxes can be for the shape type instead
+of all having boxes -->
 
+
+
+<div class="input-group">
+    <div class="input-group-text checkbox back">
+      <input class="form-check-input mt-0 box" type="checkbox" value="" aria-label="Checkbox">
+      <div class="checkbox-label">
+        {{mapNames}}
+    </div>
+    </div>
+  </div>
