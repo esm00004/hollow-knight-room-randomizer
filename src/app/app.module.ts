@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 import { AppComponent } from './app.component';
 import { HomeInfoCardComponent } from './Home/Home-InfoCard.component';
@@ -20,7 +21,8 @@ import { TestPageComponent } from './Layouts/test-page/test-page.component';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
